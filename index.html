@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(189, 186, 186);
+    }
+    .img1 img{
+        width:250px;
+        border-radius: 150px;
+        
+        
+    }
+    .img1{
+        margin-left: 40%;
+        /* border:5px solid black; */
+        align-items: center;
+        width:250px;
+        display: none;
+        position: relative;
+        border: 2px solid black;
+        padding: 30px;
+        border-radius: 30px;
+        background-color: white
+
+    }
+    /* .img2{
+        margin-left: 50%;
+        border:5px solid black;
+        align-items: center;
+        width:250px */
+
+
+     */
+    .img2 img{
+        margin-left: 50px;
+        border-radius: 200px;
+    }
+    .buttons{
+        margin-top: 10px;
+        margin-left: 730px;
+      
+        
+    }
+    .right{
+        font-size: 30px;
+        border-radius: 15px;
+    }
+    .left{
+        font-size: 30px;
+        border-radius: 15px;
+    }
+    .heading{
+        font-size: 50px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-left: 600px;
+        text-decoration: underline rgb(5, 39, 5) ;
+        
+
+    }
+    .img1 h2{
+        margin-left: 50px;
+        font-family: cursive;
+    }
+    .img1 p{
+        font-size: 20px;
+        margin-left: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+</style>
+<body>
+    <div class="heading" >
+        <h3> Our Reviews</h3>
+    </div>
+    <div class="img1">
+        <img src="8798027.gif" alt="">
+        <!-- <img src="" alt=""> -->
+        <h2>Angela yu</h2>
+        <p>
+            she is goood teacher and one of the best teacher
+        </p>
+       
+
+
+    </div>
+    <div class="img1">
+        <img src="WhatsApp Image 2023-06-05 at 23.10.34.jpg" width="250px" height="250px">
+        <!-- <img src="" alt=""> -->
+        <h2>LEGEND</h2>
+        <p>
+       Next god of universe who knows everything ... shree ji en par kripa karen
+        </p>
+    </div>
+    <div class="img1">
+        <img src="download.jpeg" width="150px">
+        <!-- <img src="" alt=""> -->
+        <h2>MONU KUMAR</h2>
+        <p>
+       Java faculty good experience
+        </p>
+    </div>
+    <div class="img1">
+        <img src="gov.jpeg.jpg" width="250px" height="250px">
+        <!-- <img src="" alt=""> -->
+        <h2>BEST</h2>
+        <p>
+       Best in the world no one can beat him except ....
+        </p>
+    </div>
+<div class="buttons">
+    <button class="right"><</button>
+    <button class="left" onclick="left()">></button>
+</div>
+<script>
+//     let f=0;
+//     let p=1;
+//     let left=document.querySelector('.right');
+//     left.addEventListener('click',function(p){
+//         f=f+p;
+//         slide(f);
+       
+//     })
+//     slide(f);
+    
+//     function slide(f){
+//     let sele=document.getElementsByClassName('img1');
+//     // console.log(sele
+//     sele[f].style.display="block";
+// }
+//     // let left=document.querySelector('.right');
+    
+// //  let left=document.querySelector('.right');
+// //    left.addEventListener('click',function(f){
+      
+// //       slide(f+1);
+// //    })
+let flag=0;
+let x=1;
+let p=-1;
+let right=document.querySelector('.right');
+right.addEventListener('click',function(){
+    flag=flag+x;
+    sele(flag);
+
+})
+sele(flag);
+// let sele=document.getElementsByClassName('img1');
+   function sele(flag){
+    let sele=document.getElementsByClassName('img1');
+    // sele[flag].style.display="block";
+    for(let y of sele){
+        y.style.display="none";
+    }
+    sele[flag].style.display="block";
+
+   }
+   function left(){
+    flag=flag+p;
+    sele(flag);
+
+   }
+ 
+
+
+  </script>  
+</body>
+</html>
